@@ -1,15 +1,21 @@
 import 'dart:async';
 
 void main() {
- // listen();
- // listenError();
- // awaitFor();
- // isEmpty();
- // getFirst();
- // getLast();
- // getSet();
- // getLength();
+  listen();
+  listenError();
+  awaitFor();
+  isEmpty();
+  getFirst();
+  getLast();
+  getSet();
+  getLength();
   getAny();
+  getContains();
+  getElementAt();
+  getFirstWhere();
+  getLastWhere();
+  getSingleWhere();
+  getJoin();
 }
 
 void listen() {
@@ -67,6 +73,35 @@ void getAny() async{
   }else{
     print('no 3');
   }
+}
+
+void getContains() async{
+  if (await getNumbers().contains(3)){
+    print('There is 3');
+  }else{
+    print('no 3');
+  }
+}
+
+void getElementAt() async{
+  print(await getNumbers().elementAt(2));
+}
+
+
+void getFirstWhere() async{
+  print(await getNumbers().firstWhere((i)=> i>1));
+}
+
+void getLastWhere() async{
+  print(await getNumbers().lastWhere((i)=> i<3));
+}
+
+void getSingleWhere() async{
+  print(await getNumbers().singleWhere((i) => i<=1));
+}
+
+void getJoin() async{
+  print(await getNumbers().join(','));
 }
 
 Stream<int> getNumbers() async* {
