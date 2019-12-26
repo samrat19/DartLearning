@@ -1,4 +1,4 @@
-main(){
+void main(){
   var list = List<int>();
   for(var i=0;i<10;i++){
     list.add(i);

@@ -1,7 +1,7 @@
-main() {
+void main() {
 
   outerLoop: for (var i = 0; i < 5; i++) {
-    print("Innerloop: ${i}");
+    print('Innerloop: ${i}');
     innerLoop: for (var j = 0; j < 5; j++) {
       if (j > 3 ) break ;
 
@@ -12,7 +12,7 @@ main() {
       if (i == 4) break outerLoop;
 
       // Quit the outer loop
-      print("Innerloop: ${j}");
+      print('Innerloop: ${j}');
     }
   }
 }

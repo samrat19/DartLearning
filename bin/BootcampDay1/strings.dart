@@ -1,5 +1,6 @@
-main(){
+void main(){
 
+  // ignore: omit_local_variable_types
   String string = 'Hello Dart Learners';
 
   //String Property
