@@ -1,4 +1,4 @@
-void main(){
+void numberMethods(){
 
   var num = 10.35;
 

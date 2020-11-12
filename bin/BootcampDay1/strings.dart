@@ -1,4 +1,4 @@
-void main(){
+void stringMethods(){
 
   // ignore: omit_local_variable_types
   String string = 'Hello Dart Learners';
