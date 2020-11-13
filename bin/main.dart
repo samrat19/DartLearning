@@ -9,6 +9,7 @@ import 'BootcampDay2/Collection/list.dart' as list;
 
 import 'BootcampDay2/OOP/making_class.dart' as demo_class;
 import 'BootcampDay2/OOP/constructor.dart' as constructor;
+import 'BootcampDay3/NetWorking/jsonParsing.dart' as network;
 
 void main(){
   // dart_enum.runEnum();
@@ -21,5 +22,6 @@ void main(){
   // list.runList();
   //
   // demo_class.runCLass();
-  constructor.useConstructor();
+  //constructor.useConstructor();
+  network.runNetwork();
 }
