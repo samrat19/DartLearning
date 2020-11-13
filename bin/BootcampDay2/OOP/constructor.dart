@@ -1,18 +1,12 @@
-import 'dart:core';
-
 class MyClass{
   final int a;
   final int b;
 
-  MyClass(this.a, this.b);
+  const MyClass({this.a,this.b});
 
-  add(){
-    print(a+b);
-  }
-
+  void add() => print(a+b);
 }
 
-main(){
-  MyClass myClass = MyClass(4,3);
-  myClass.add();
+void useConstructor(){
+  MyClass(a: 2,b: 3).add();
 }

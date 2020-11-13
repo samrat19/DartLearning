@@ -1,5 +1,5 @@
-void main(){
-  var list = List<int>();
+void runList(){
+  var list = <int>[];
   for(var i=0;i<10;i++){
     list.add(i);
   }

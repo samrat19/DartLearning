@@ -1,10 +1,9 @@
 class MyClass{
-  add(int a,int b){
+  void add(int a,int b){
     print(a+b);
   }
 }
 
-main(){
-  MyClass myClass = MyClass();
-  myClass.add(2, 3);
+void runCLass(){
+  MyClass().add(2, 3);
 }
